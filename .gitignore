@@ -1,0 +1,24 @@
+# Windows 可执行文件
+*.exe
+*.exe~
+
+# 编译中间文件
+*.o
+*.obj
+*.dll
+*.lib
+*.so
+
+# VS Code 设置（如果需要保留则注释掉以下行）
+# .vscode/
+
+# 系统文件
+Thumbs.db
+*.swp
+*.swo
+*~
+
+# IDE 项目文件
+*.user
+*.suo
+.DS_Store
