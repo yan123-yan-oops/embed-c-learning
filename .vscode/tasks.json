@@ -1,0 +1,50 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build current file",
+            "type": "shell",
+            "command": "D:/TDM-GCC/bin/gcc.exe",
+            "args": [
+                "-g",
+                "-Wall",
+                "-Wextra",
+                "-std=c11",
+                "${file}",
+                "-o",
+                "${fileDirname}/${fileBasenameNoExtension}.exe"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": ["$gcc"],
+            "detail": "编译当前 .c 文件为可执行文件"
+        },
+        {
+            "label": "build and run",
+            "type": "shell",
+            "command": "D:/TDM-GCC/bin/gcc.exe",
+            "args": [
+                "-g",
+                "-Wall",
+                "-Wextra",
+                "-std=c11",
+                "${file}",
+                "-o",
+                "${fileDirname}/${fileBasenameNoExtension}.exe"
+            ],
+            "group": "build",
+            "problemMatcher": ["$gcc"],
+            "detail": "编译并运行当前文件"
+        },
+        {
+            "label": "run current file",
+            "type": "shell",
+            "command": "${fileDirname}/${fileBasenameNoExtension}.exe",
+            "dependsOn": "build current file",
+            "group": "none",
+            "detail": "运行已编译的可执行文件"
+        }
+    ]
+}

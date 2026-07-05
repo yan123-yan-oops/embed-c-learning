@@ -1,0 +1,27 @@
+{
+    // ========== Code Runner 配置 ==========
+    "code-runner.executorMap": {
+        "c": "cd $dir && C:\\Windows\\System32\\chcp.com 65001>nul && D:/TDM-GCC/bin/gcc.exe -Wall -std=c11 $fileName -o $fileNameWithoutExt.exe && $dir$fileNameWithoutExt.exe",
+        "cpp": "cd $dir && C:\\Windows\\System32\\chcp.com 65001>nul && D:/TDM-GCC/bin/g++.exe -Wall -std=c++11 $fileName -o $fileNameWithoutExt.exe && $dir$fileNameWithoutExt.exe"
+    },
+    "code-runner.runInTerminal": true,
+    "code-runner.clearPreviousOutput": true,
+    "code-runner.saveFileBeforeRun": true,
+
+    // ========== 终端用 cmd.exe + UTF-8 编码 ==========
+    "terminal.integrated.defaultProfile.windows": "Command Prompt",
+    "terminal.integrated.profiles.windows": {
+        "Command Prompt": {
+            "path": "C:\\Windows\\System32\\cmd.exe",
+            "args": ["/Q", "/K", "C:\\Windows\\System32\\chcp.com 65001 > nul"]
+        }
+    },
+    "terminal.integrated.automationProfile.windows": {
+        "path": "C:\\Windows\\System32\\cmd.exe",
+        "args": ["/Q", "/K", "C:\\Windows\\System32\\chcp.com 65001 > nul"]
+    },
+
+    // ========== 文件编码 ==========
+    "files.encoding": "utf8",
+    "files.autoGuessEncoding": false
+}
