@@ -241,15 +241,15 @@ int main(void)
 {
     printf("===== 指针全面演示 =====\n\n");
 
-    demo_essence();
+    //demo_essence();
     demo_arithmetic();
-    demo_array_vs_pointer();
-    demo_array_decay();
-    demo_pass_by_pointer();
-    demo_const_pointers();
-    demo_function_pointer();
-    demo_volatile_pointer();
-    demo_null_wild();
+    // demo_array_vs_pointer();
+    // demo_array_decay();
+    // demo_pass_by_pointer();
+    // demo_const_pointers();
+    // demo_function_pointer();
+    // demo_volatile_pointer();
+    // demo_null_wild();
 
     printf("✅ 全部演示结束！配合笔记 C:\\Users\\Administrator\\Documents\\学习笔记\\嵌入式C\\指针.md\n");
     return 0;

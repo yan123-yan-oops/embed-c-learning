@@ -27,37 +27,47 @@
 embed-c-learning/
 ├── 01-basics/                          # C 基础 + 数据类型
 │   ├── data_types_and_twos_complement.c  # 数据类型/整型提升/补码/%d vs %u
-│   └── volatile_static.c                 # volatile/static 三大场景
+│   ├── volatile_static.c                 # volatile/static 三大场景
+│   └── EXERCISES.md                      ← 本章习题
 │
 ├── 02-pointers/                        # 指针
 │   ├── pointers_intro.c                  # 指针、数组、函数指针
-│   └── pointer_comprehensive.c           # 指针综合应用
+│   ├── pointer_comprehensive.c           # 指针综合应用
+│   └── EXERCISES.md                      ← 本章习题
 │
 ├── 03-bitwise/                         # 位操作
-│   └── bit_ops.c                         # GPIO 置位/清位/翻转、寄存器位域
+│   ├── bit_ops.c                         # GPIO 置位/清位/翻转、寄存器位域
+│   └── EXERCISES.md                      ← 本章习题
 │
 ├── 04-memory/                          # 内存管理
-│   └── memory_layout.c                   # 栈/堆/全局区/常量区 + 内存池
+│   ├── memory_layout.c                   # 栈/堆/全局区/常量区 + 内存池
+│   └── EXERCISES.md                      ← 本章习题
 │
 ├── 05-struct-enum/                     # 结构体与枚举
-│   └── struct_enum.c                     # struct/union/packed/位域
+│   ├── struct_enum.c                     # struct/union/packed/位域
+│   └── EXERCISES.md                      ← 本章习题
 │
 ├── 06-strings/                         # 字符串处理
-│   └── string_parse.c                    # NMEA 字符串解析
+│   ├── string_parse.c                    # NMEA 字符串解析
+│   └── EXERCISES.md                      ← 本章习题
 │
 ├── 07-ringbuffer/                      # 环形缓冲区
-│   └── ring_buffer.c                     # ISR 安全的无锁环形队列
+│   ├── ring_buffer.c                     # ISR 安全的无锁环形队列
+│   └── EXERCISES.md                      ← 本章习题
 │
 ├── 08-nmea-parser/                     # NMEA 0183 解析器（模块化工程）
 │   ├── main.c
 │   ├── nmea_parser.c
-│   └── nmea_parser.h
+│   ├── nmea_parser.h
+│   └── EXERCISES.md                      ← 本章习题
 │
 ├── 09-pool-allocator/                  # 静态内存池
-│   └── memory_pool.c                     # 零 malloc 的内存管理
+│   ├── memory_pool.c                     # 零 malloc 的内存管理
+│   └── EXERCISES.md                      ← 本章习题
 │
 ├── 10-state-machine/                   # 状态机
-│   └── state_machine.c                   # 有限状态机框架
+│   ├── state_machine.c                   # 有限状态机框架
+│   └── EXERCISES.md                      ← 本章习题
 │
 ├── .vscode/                            # VS Code 配置（智能提示/编译任务）
 └── README.md                           # 本文件
